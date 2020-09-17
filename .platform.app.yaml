@@ -124,7 +124,7 @@ source:
     upstream-update:
       command: |
         set -e
-        git remote add upstream git@github.com:yuriybabenko/ebsco-so-demo.git
+        git remote add upstream https://github.com/yuriybabenko/ebsco-so-demo
         git fetch --all
         git merge upstream/master
         cp -r config/$CLIENT_CONFIG_DIR/* web/profiles/stacks_core/config/client_specific/
