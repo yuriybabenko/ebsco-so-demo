@@ -1,0 +1,27 @@
+definitions:
+  contact__site_page:
+    enabled: true
+    menu_name: footer
+    parent: ''
+    weight: 0
+    expanded: false
+  filter__tips_all:
+    weight: -48
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: true
+  search__view:
+    weight: -49
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: true
+  node__add_page:
+    weight: -47
+    menu_name: tools
+    parent: ''
+    enabled: true
+    expanded: false
+_core:
+  default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ

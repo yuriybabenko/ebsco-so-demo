@@ -1,0 +1,16 @@
+uuid: 0307c4c9-6e06-4ee4-9582-e7ce3d7ef365
+langcode: en
+status: true
+dependencies: {  }
+id: client_specific
+label: client-specific
+description: 'Client-specific configuration.'
+folder: profiles/stacks_core/config/client_specific
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - automated_cron.settings
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

@@ -1,0 +1,15 @@
+uuid: cea897be-e422-4818-99f2-c84cdcc6e39c
+name: d8
+mail: yuriy.babenko@platform.sh
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: ''

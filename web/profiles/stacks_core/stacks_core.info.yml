@@ -1,0 +1,64 @@
+name: Stacks Core
+type: profile
+description: 'Core functionality common to all clients.'
+core: 8.x
+
+distribution:
+  name: Stacks Core Distribution
+  install:
+#    theme: bartik
+    langcode: en
+
+# Modules to install to support the profile.
+install:
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - color
+  - config
+  - comment
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - big_pipe
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - tour
+  - automated_cron
+  - config_split
+
+# Required modules
+# Note that any dependencies of the modules listed here will be installed automatically.
+dependencies:
+  - node
+  - block
+  - views
+
+# List any themes that should be installed as part of the profile installation.
+# Note that this will not set any theme as the default theme.
+themes:
+  - bartik
+  - seven
+
+config_install: true
