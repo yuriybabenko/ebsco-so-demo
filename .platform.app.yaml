@@ -128,9 +128,16 @@ source:
         git fetch --all
         git merge upstream/master --allow-unrelated-histories
         cp -r config/$CLIENT_CONFIG_DIR/* web/profiles/stacks_core/config/client_specific/
+        git add .
+        git commit -m 'added client-specific config'
 
 # The configuration of scheduled execution.
 crons:
-    drupal:
-        spec: '*/20 * * * *'
-        cmd: 'cd web ; drush core-cron'
+  drupal:
+    spec: '*/20 * * * *'
+    cmd: 'cd web ; drush core-cron'
+  upstream-updates:
+    spec: '*/1 * * * *'
+    cmd: |
+      set -e
+      platform source-operation:run upstream-update
