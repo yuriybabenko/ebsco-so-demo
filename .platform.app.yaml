@@ -52,6 +52,7 @@ hooks:
     build: |
         set -e
         bash install-redis.sh 4.3.0
+        curl -sS https://platform.sh/cli/installer | php
     # The deploy hook runs after your application has been deployed and started.
     deploy: |
         set -e
@@ -135,7 +136,7 @@ source:
 crons:
   drupal:
     spec: '*/20 * * * *'
-    cmd: 'cd web ; drush core-cron' 
+    cmd: 'cd web ; drush core-cron'
   upstream-updates:
     spec: '*/1 * * * *'
     cmd: |
