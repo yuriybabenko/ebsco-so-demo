@@ -135,7 +135,7 @@ source:
 crons:
   drupal:
     spec: '*/20 * * * *'
-    cmd: 'cd web ; drush core-cron'
+    cmd: 'cd web ; drush core-cron' 
   upstream-updates:
     spec: '*/1 * * * *'
     cmd: |
