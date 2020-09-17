@@ -126,7 +126,7 @@ source:
         set -e
         git remote add upstream https://github.com/yuriybabenko/ebsco-so-demo
         git fetch --all
-        git merge upstream/master
+        git merge upstream/master --allow-unrelated-histories
         cp -r config/$CLIENT_CONFIG_DIR/* web/profiles/stacks_core/config/client_specific/
 
 # The configuration of scheduled execution.
